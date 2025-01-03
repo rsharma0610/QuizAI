@@ -1,0 +1,21 @@
+.generator-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.loading-spinner {
+    height: 90px;
+    width: 90px;
+    border: 6px solid;
+    border-color: white transparent white transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    align-self: center;
+}
+
+@keyframes spin {
+    to{
+        transform: rotate(360deg);
+    }
+}
