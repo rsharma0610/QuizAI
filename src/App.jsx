@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import QuizGeneratorForm from './components/QuizGeneratorForm'
 import Question from './components/Question'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 function App() {
   /*const quiz = [
@@ -135,6 +136,7 @@ function App() {
         {quizScoreMessage && <p>{quizScoreMessage}</p>}
       </div>}
 
+      <SpeedInsights/>
     </>
   )
 }
