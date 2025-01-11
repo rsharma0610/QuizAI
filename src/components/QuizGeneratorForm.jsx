@@ -26,7 +26,7 @@ function QuizGeneratorForm(props){
         event.preventDefault(); // Prevent default form submission
         setLoading(true);
         try {
-          const response = await axios.post("http://localhost:4000/generate-quiz", quizInfo);
+          const response = await axios.post("https://quiz-ai-git-main-rohan-sharmas-projects-bfd75ca3.vercel.app/api/generate-quiz", quizInfo);
           console.log("Quiz generated:", response.data);
           props.setQuiz(response.data);
           props.onGenerateQuiz(); // Pass generated quiz data to parent component
